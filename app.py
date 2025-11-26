@@ -32,7 +32,7 @@ def get_bot_response():
         res = "I am a bot and I am powered by AI"
     elif msg=="how is the weather" or msg=="what is the temperature" or msg=="is it raining" or msg=="is it sunny" or msg=="how's the weather":
         res = "The weather is quite pleasant and it's a nice day."
-    elif msg=="how is the program" or msg=="do you like the program" or msg=="should i do this program" or msg=="is this program useful" or "program" in msg:
+    elif msg == "how is the program" or msg=="do you like the program" or msg=="should i do this program" or msg=="is this program useful" or ("program" in msg):
         res = "This program is one of the best.I like this program a lot."
     elif msg =="do you love me" or msg == "do you hate me" or msg == "I love you":
         res = "You are my favorite."
