@@ -16,8 +16,8 @@ def home():
 @application.route("/get")
 def get_bot_response():
     userText = request.args.get('msg')
-        if not userText:
-    return "Please type something!"
+    if not userText:
+        return "Please type something!"
     msg = userText.lower()
     if msg == "what is your name?" or msg == "what is your name" or msg == "what's your name?" or msg == "what's your name" or msg == "name?" or msg == "name":
         res = "My name is Joey. Nice to meet you."
